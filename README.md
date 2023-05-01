@@ -1,4 +1,4 @@
-# -E-Commerce-Product-Recommendation
+# E-Commerce-Product-Recommendation
 E-commerce businesses are always striving to provide personalized experiences to their customers to increase engagement and loyalty. One way to achieve this is through product recommendation systems. In this project, we will build a recommendation system for an e-commerce website using batch processing and stream processing techniques.
 
 To start, we will use batch processing to preprocess the data. We will collect data on user behaviour, such as clicks, purchases, and page views, and use this data to build user profiles. These user profiles will be used to generate recommendations based on user preferences and behavior.
