@@ -1423,5 +1423,137 @@
     <argument id="503" parent="172">
       <Position>1</Position>
     </argument>
+    <table id="504" parent="173" name="books"/>
+    <table id="505" parent="173" name="ratings"/>
+    <table id="506" parent="173" name="sqlite_master">
+      <System>1</System>
+    </table>
+    <table id="507" parent="173" name="user"/>
+    <column id="508" parent="504" name="ISBN">
+      <DasType>VARCHAR(20)|0s</DasType>
+      <DefaultExpression>&apos; &apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="509" parent="504" name="BOOK_TITLE">
+      <DasType>VARCHAR(20)|0s</DasType>
+      <DefaultExpression>NULL</DefaultExpression>
+      <Position>2</Position>
+    </column>
+    <column id="510" parent="504" name="BOOK_AUTHOR">
+      <DasType>VARCHAR(20)|0s</DasType>
+      <DefaultExpression>NULL</DefaultExpression>
+      <Position>3</Position>
+    </column>
+    <column id="511" parent="504" name="YEAR_OF_PUBLICATION">
+      <DasType>INT|0s</DasType>
+      <DefaultExpression>NULL</DefaultExpression>
+      <Position>4</Position>
+    </column>
+    <column id="512" parent="504" name="PUBLISHER">
+      <DasType>VARCHAR(20)|0s</DasType>
+      <DefaultExpression>NULL</DefaultExpression>
+      <Position>5</Position>
+    </column>
+    <column id="513" parent="504" name="Image_URL_S">
+      <DasType>varchar(255)|0s</DasType>
+      <DefaultExpression>NULL</DefaultExpression>
+      <Position>6</Position>
+    </column>
+    <column id="514" parent="504" name="Image_URL_M">
+      <DasType>varchar(255)|0s</DasType>
+      <DefaultExpression>NULL</DefaultExpression>
+      <Position>7</Position>
+    </column>
+    <index id="515" parent="504" name="sqlite_autoindex_books_1">
+      <ColNames>ISBN</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Unique>1</Unique>
+    </index>
+    <key id="516" parent="504">
+      <ColNames>ISBN</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_books_1</UnderlyingIndexName>
+    </key>
+    <column id="517" parent="505" name="User_ID">
+      <DasType>INT|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="518" parent="505" name="ISBN">
+      <DasType>VARCHAR(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="519" parent="505" name="BOOK_RATING">
+      <DasType>INT|0s</DasType>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="520" parent="506" name="type">
+      <DasType>TEXT|0s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="521" parent="506" name="name">
+      <DasType>TEXT|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="522" parent="506" name="tbl_name">
+      <DasType>TEXT|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="523" parent="506" name="rootpage">
+      <DasType>INT|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="524" parent="506" name="sql">
+      <DasType>TEXT|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="525" parent="507" name="User_ID">
+      <DasType>INTEGER|0s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="526" parent="507" name="username">
+      <DasType>VARCHAR(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="527" parent="507" name="email">
+      <DasType>VARCHAR(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="528" parent="507" name="password">
+      <DasType>VARCHAR(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="529" parent="507" name="confirm">
+      <DasType>VARCHAR(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="530" parent="507" name="Age">
+      <DasType>INT|0s</DasType>
+      <DefaultExpression>0</DefaultExpression>
+      <Position>6</Position>
+    </column>
+    <column id="531" parent="507" name="Location">
+      <DasType>VARCHAR(20)|0s</DasType>
+      <DefaultExpression>&apos; &apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+    </column>
+    <column id="532" parent="507" name="Past_Purchase">
+      <DasType>INT|0s</DasType>
+      <DefaultExpression>0</DefaultExpression>
+      <Position>8</Position>
+    </column>
+    <key id="533" parent="507">
+      <ColNames>User_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
   </database-model>
 </dataSource>

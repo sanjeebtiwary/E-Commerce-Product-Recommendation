@@ -18,11 +18,11 @@ import re
 import seaborn as sns
 
 # Loading data
-books = pd.read_csv('D:\Project\E Commerce Product Recommendation\data\books.csv', sep=';', error_bad_lines=False, encoding="latin-1", dtype=object)
+books = pd.read_csv('D:/Project/E Commerce Product Recommendation/data/books.csv', sep=';', error_bad_lines=False, encoding="latin-1", dtype=object)
 books.columns = ['ISBN', 'bookTitle', 'bookAuthor', 'yearOfPublication', 'publisher']
-users = pd.read_csv('users.csv', sep=';', error_bad_lines=False, encoding="latin-1")
+users = pd.read_csv('D:/Project/E Commerce Product Recommendation/data/users.csv', sep=';', error_bad_lines=False, encoding="latin-1")
 users.columns = ['userID', 'Location', 'Age']
-ratings = pd.read_csv('ratings.csv', sep=';', error_bad_lines=False, encoding="latin-1", dtype=object)
+ratings = pd.read_csv('D:/Project/E Commerce Product Recommendation/data/ratings.csv', sep=';', error_bad_lines=False, encoding="latin-1", dtype=object)
 ratings.columns = ['userID', 'ISBN', 'bookRating']
 
 # checking shapes of the datasets

@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f057d4f5-3cca-444e-b7cb-9f0a26e14382" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2b68a101-9890-449d-aedd-12dec70ec04c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2b68a101-9890-449d-aedd-12dec70ec04c.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ratings.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/ratings.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recommendation_engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/recommendation_engine.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_basic.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_basic.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +55,9 @@
   "keyToStringList": {
     "DatabaseDriversLRU": [
       "mysql"
+    ],
+    "RunConfigurationTargetLRU": [
+      "2b68a101-9890-449d-aedd-12dec70ec04c/schema/\"main\""
     ]
   }
 }]]></component>
@@ -61,6 +65,7 @@
     <configuration name="console.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
       <script-file value="$APPLICATION_CONFIG_DIR$/consoles/db/2b68a101-9890-449d-aedd-12dec70ec04c/console.sql" />
       <script-mode>FILE</script-mode>
+      <data-source id="2b68a101-9890-449d-aedd-12dec70ec04c" namespace="schema/&quot;main&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="E Commerce Product Recommendation" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
@@ -124,7 +129,7 @@
       <workItem from="1682935949995" duration="108000" />
       <workItem from="1682960007028" duration="694000" />
       <workItem from="1682966432931" duration="1100000" />
-      <workItem from="1683011515318" duration="5556000" />
+      <workItem from="1683011515318" duration="8562000" />
     </task>
     <servers />
   </component>
@@ -136,5 +141,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/save_py$E_Commerce_Product_Recommendation.coverage" NAME="E Commerce Product Recommendation Coverage Results" MODIFIED="1683011601944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/save_py$.coverage" NAME=" Coverage Results" MODIFIED="1683023306690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
