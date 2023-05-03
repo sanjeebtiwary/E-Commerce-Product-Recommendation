@@ -44,18 +44,18 @@ def team():
     return render_template('team.html', title='about')
 
 
-@app.route("", methods=['GET', 'POST'])
+@app.route("D:\Project\E Commerce Product Recommendation\Webpage\signup", methods=['GET', 'POST'])
 def register():
     form = RegistrationForm()
     if form.validate_on_submit():
         with sqlite3.connect("database.db") as con:
             cur = con.cursor()
         cur.execute("INSERT INTO user(username,email,password,confirm,Age,Location) VALUES (?,?,?,?,?,?)", (
-        form.username.data, form.email.data, form.password.data, form.confirm_password.data, form.Age.data,
-        form.Location.data))
+            form.username.data, form.email.data, form.password.data, form.confirm_password.data, form.Age.data,
+            form.Location.data))
         con.commit()
         return redirect(url_for('login'))
-    return render_template('register.html', title='Register', form=form)
+    return render_template('signup.html', title='Register', form=form)
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -92,7 +92,8 @@ def login():
 
 @app.route('/recommend/<int:user_id>')
 def recommend(user_id):
-    books = pd.read_csv('D:\Project\E Commerce Product Recommendation\data\amazon products.csv', sep=';', error_bad_lines=False, encoding="latin-1", dtype=object)
+    books = pd.read_csv('D:\Project\E Commerce Product Recommendation\data\amazon products.csv', sep=';',
+                        error_bad_lines=False, encoding="latin-1", dtype=object)
 
     books.head()
 
@@ -109,7 +110,7 @@ def recommend(user_id):
     # invalid keeping some margin in case dataset was updated thereafer
     # setting invalid years as NaN
     books.loc[(books.yearOfPublication.astype(np.int32) > 2006) | (
-                books.yearOfPublication.astype(np.int32) == 0), 'yearOfPublication'] = np.NAN
+            books.yearOfPublication.astype(np.int32) == 0), 'yearOfPublication'] = np.NAN
 
     # replacing NaNs with mean value of yearOfPublication
     books.yearOfPublication.fillna(round(books.yearOfPublication.mean()), inplace=True)
