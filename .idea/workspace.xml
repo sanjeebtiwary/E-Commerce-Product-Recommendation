@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f057d4f5-3cca-444e-b7cb-9f0a26e14382" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2b68a101-9890-449d-aedd-12dec70ec04c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2b68a101-9890-449d-aedd-12dec70ec04c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rcom.py" beforeDir="false" afterPath="$PROJECT_DIR$/rcom.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,31 +35,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Project/E Commerce Product Recommendation&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/Project/E Commerce Product Recommendation/data/amazon products.csv",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "postgresql",
+      "sqlite"
     ],
-    &quot;RunConfigurationTargetLRU&quot;: [
-      &quot;2b68a101-9890-449d-aedd-12dec70ec04c/schema/\&quot;main\&quot;&quot;
+    "RunConfigurationTargetLRU": [
+      "2b68a101-9890-449d-aedd-12dec70ec04c/schema/\"main\""
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="console.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
       <script-file value="$APPLICATION_CONFIG_DIR$/consoles/db/2b68a101-9890-449d-aedd-12dec70ec04c/console.sql" />
@@ -131,6 +133,7 @@
       <workItem from="1683011515318" duration="8562000" />
       <workItem from="1683026338323" duration="811000" />
       <workItem from="1683105759995" duration="703000" />
+      <workItem from="1683125227718" duration="1172000" />
     </task>
     <servers />
   </component>
