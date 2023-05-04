@@ -18,7 +18,7 @@ def cur():
     print("closing DB")
 
 def test_database_connectivity(cur):
-    cur.execute("select User_ID from user where username='Atul'")
+    cur.execute("select * from user where username='Atul'")
     id=cur.fetchall()
     assert id[0][0] == 2
 
