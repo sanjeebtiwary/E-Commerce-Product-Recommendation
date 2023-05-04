@@ -483,21 +483,21 @@ def recommend(user_id):
     print("------------------urls3--dgsdg------------", urls3, "------------")
     with sqlite3.connect("database.db") as con:
         cur = con.cursor()
-    find_book = ("SELECT Image_URL_S FROM books WHERE BOOK_TITLE=?")
+    find_book = ("SELECT C16 FROM 'amazon products' WHERE user_id=?")
     cur.execute(find_book, [urls1])
     predict11 = cur.fetchall()
     con.close()
 
     with sqlite3.connect("database.db") as con:
         cur = con.cursor()
-    find_book = ("SELECT Image_URL_S FROM books WHERE BOOK_TITLE=?")
+    find_book = ("SELECT C16 FROM 'amazon products' WHERE user_id=?")
     cur.execute(find_book, [urls2])
     predict22 = cur.fetchall()
     con.close()
 
     with sqlite3.connect("database.db") as con:
         cur = con.cursor()
-    find_book = ("SELECT Image_URL_S FROM books WHERE BOOK_TITLE=?")
+    find_book = ("SELECT C16 FROM 'amazon products' WHERE user_id=?")
     cur.execute(find_book, [urls3])
     predict33 = cur.fetchall()
     con.close()
@@ -506,7 +506,7 @@ def recommend(user_id):
     # ---------------------------------------Discount end_________________________________________
     with sqlite3.connect("database.db") as con:
         cur = con.cursor()
-    find_user = ("SELECT * FROM user WHERE User_ID=?")
+    find_user = ("SELECT * FROM user WHERE user_id=?")
     cur.execute(find_user, [userID])
     names = cur.fetchall()
     con.close()
@@ -525,21 +525,21 @@ def recommend(user_id):
 
     with sqlite3.connect("database.db") as con:
         cur = con.cursor()
-    find_book = ("SELECT Image_URL_S FROM books WHERE BOOK_TITLE=?")
+    find_book = ("SELECT C16 FROM 'amazon products' WHERE user_id=?")
     cur.execute(find_book, [urls1])
     predict1 = cur.fetchall()
     con.close()
 
     with sqlite3.connect("database.db") as con:
         cur = con.cursor()
-    find_book = ("SELECT Image_URL_S FROM books WHERE BOOK_TITLE=?")
+    find_book = ("SELECT C16 FROM 'amazon products' WHERE user_id=?")
     cur.execute(find_book, [urls2])
     predict2 = cur.fetchall()
     con.close()
 
     with sqlite3.connect("database.db") as con:
         cur = con.cursor()
-    find_book = ("SELECT Image_URL_S FROM books WHERE BOOK_TITLE=?")
+    find_book = ("SELECT C16 FROM 'amazon products' WHERE user_id=?")
     cur.execute(find_book, [urls3])
     predict3 = cur.fetchall()
     con.close()
@@ -557,42 +557,42 @@ def recommend(user_id):
     st = '0000' + str(list1[0])
     with sqlite3.connect("database.db") as con:
         cur = con.cursor()
-    find = ("SELECT BOOK_TITLE,Image_URL_M,BOOK_AUTHOR,YEAR_OF_PUBLICATION,PUBLISHER FROM books WHERE ISBN=?")
+    find = ("SELECT user_id,C2,user_id, C2, C3, C4, C5, C6, C7, C8 FROM 'amazon products' WHERE C18=?")
     cur.execute(find, [st])
     lis = cur.fetchall()
 
     st = '0000' + str(list1[1])
     with sqlite3.connect("database.db") as con:
         cur = con.cursor()
-    find = ("SELECT BOOK_TITLE,Image_URL_M,BOOK_AUTHOR,YEAR_OF_PUBLICATION,PUBLISHER FROM books WHERE ISBN=?")
+    find = ("SELECT user_id,C2,user_id, C2, C3, C4, C5, C6, C7, C8 FROM 'amazon products' WHERE C18=?")
     cur.execute(find, [st])
     lid = cur.fetchall()
 
     st = '0000' + str(list1[2])
     with sqlite3.connect("database.db") as con:
         cur = con.cursor()
-    find = ("SELECT BOOK_TITLE,Image_URL_M,BOOK_AUTHOR,YEAR_OF_PUBLICATION,PUBLISHER FROM books WHERE ISBN=?")
+    find = ("SELECT user_id,C2,user_id, C2, C3, C4, C5, C6, C7, C8 FROM 'amazon products' WHERE C18=?")
     cur.execute(find, [st])
     lit = cur.fetchall()
 
     st = '0000' + str(list1[3])
     with sqlite3.connect("database.db") as con:
         cur = con.cursor()
-    find = ("SELECT BOOK_TITLE,Image_URL_M,BOOK_AUTHOR,YEAR_OF_PUBLICATION,PUBLISHER FROM books WHERE ISBN=?")
+    find = ("SELECT user_id,C2,user_id, C2, C3, C4, C5, C6, C7, C8 FROM 'amazon products' WHERE C18=?")
     cur.execute(find, [st])
     liq = cur.fetchall()
 
     st = '0000' + str(list1[4])
     with sqlite3.connect("database.db") as con:
         cur = con.cursor()
-    find = ("SELECT BOOK_TITLE,Image_URL_M,BOOK_AUTHOR,YEAR_OF_PUBLICATION,PUBLISHER FROM books WHERE ISBN=?")
+    find = ("SELECT user_id,C2,user_id, C2, C3, C4, C5, C6, C7, C8 FROM 'amazon products' WHERE C18=?")
     cur.execute(find, [st])
     liw = cur.fetchall()
 
     st = '000' + str(10)
     with sqlite3.connect("database.db") as con:
         cur = con.cursor()
-    find = ("SELECT BOOK_TITLE,Image_URL_M,BOOK_AUTHOR,YEAR_OF_PUBLICATION,PUBLISHER FROM books WHERE ISBN=?")
+    find = ("SELECT user_id,C2,user_id, C2, C3, C4, C5, C6, C7, C8 FROM 'amazon products' WHERE C18=?")
     cur.execute(find, [st])
     lir = cur.fetchall()
 
@@ -626,42 +626,42 @@ def final(Hello):
     st = '0000' + str(list2[0])
     with sqlite3.connect("database.db") as con:
         cur = con.cursor()
-    find = ("SELECT BOOK_TITLE,Image_URL_M,BOOK_AUTHOR,YEAR_OF_PUBLICATION,PUBLISHER FROM books WHERE ISBN=?")
+    find = ("SELECT user_id,C2,user_id, C2, C3, C4, C5, C6, C7, C8 FROM 'amazon products' WHERE C18=?")
     cur.execute(find, [st])
     nia = cur.fetchall()
 
     st = '0000' + str(list2[1])
     with sqlite3.connect("database.db") as con:
         cur = con.cursor()
-    find = ("SELECT BOOK_TITLE,Image_URL_M,BOOK_AUTHOR,YEAR_OF_PUBLICATION,PUBLISHER FROM books WHERE ISBN=?")
+    find = ("SELECT user_id,C2,user_id, C2, C3, C4, C5, C6, C7, C8 FROM 'amazon products' WHERE C18=?")
     cur.execute(find, [st])
     nib = cur.fetchall()
 
     st = '0000' + str(list2[2])
     with sqlite3.connect("database.db") as con:
         cur = con.cursor()
-    find = ("SELECT BOOK_TITLE,Image_URL_M,BOOK_AUTHOR,YEAR_OF_PUBLICATION,PUBLISHER FROM books WHERE ISBN=?")
+    find = ("SELECT user_id,C2,user_id, C2, C3, C4, C5, C6, C7, C8 FROM 'amazon products' WHERE C18=?")
     cur.execute(find, [st])
     nic = cur.fetchall()
 
     st = '0000' + str(list2[3])
     with sqlite3.connect("database.db") as con:
         cur = con.cursor()
-    find = ("SELECT BOOK_TITLE,Image_URL_M,BOOK_AUTHOR,YEAR_OF_PUBLICATION,PUBLISHER FROM books WHERE ISBN=?")
+    find = ("SELECT user_id,C2,user_id, C2, C3, C4, C5, C6, C7, C8 FROM 'amazon products' WHERE C18=?")
     cur.execute(find, [st])
     nid = cur.fetchall()
 
     st = '0000' + str(list2[4])
     with sqlite3.connect("database.db") as con:
         cur = con.cursor()
-    find = ("SELECT BOOK_TITLE,Image_URL_M,BOOK_AUTHOR,YEAR_OF_PUBLICATION,PUBLISHER FROM books WHERE ISBN=?")
+    find = ("SELECT user_id,C2,user_id, C2, C3, C4, C5, C6, C7, C8 FROM 'amazon products' WHERE C18=?")
     cur.execute(find, [st])
     nie = cur.fetchall()
 
     st = '000' + str(10)
     with sqlite3.connect("database.db") as con:
         cur = con.cursor()
-    find = ("SELECT BOOK_TITLE,Image_URL_M,BOOK_AUTHOR,YEAR_OF_PUBLICATION,PUBLISHER FROM books WHERE ISBN=?")
+    find = ("SELECT user_id,C2,user_id, C2, C3, C4, C5, C6, C7, C8 FROM 'amazon products' WHERE C18=?")
     cur.execute(find, [st])
     nif = cur.fetchall()
     # ==================================================

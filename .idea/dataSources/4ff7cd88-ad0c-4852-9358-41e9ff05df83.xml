@@ -1423,71 +1423,184 @@
     <argument id="503" parent="172">
       <Position>1</Position>
     </argument>
-    <table id="504" parent="173" name="sqlite_master">
+    <table id="504" parent="173" name="amazon products"/>
+    <table id="505" parent="173" name="sqlite_master">
       <System>1</System>
     </table>
-    <table id="505" parent="173" name="user"/>
-    <column id="506" parent="504" name="type">
+    <table id="506" parent="173" name="user"/>
+    <column id="507" parent="504" name="user_id">
       <DasType>TEXT|0s</DasType>
       <Position>1</Position>
     </column>
-    <column id="507" parent="504" name="name">
+    <column id="508" parent="504" name="C2">
       <DasType>TEXT|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="508" parent="504" name="tbl_name">
+    <column id="509" parent="504" name="C3">
       <DasType>TEXT|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="509" parent="504" name="rootpage">
+    <column id="510" parent="504" name="C4">
+      <DasType>TEXT|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="511" parent="504" name="C5">
+      <DasType>TEXT|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="512" parent="504" name="C6">
+      <DasType>TEXT|0s</DasType>
+      <Position>6</Position>
+    </column>
+    <column id="513" parent="504" name="C7">
+      <DasType>TEXT|0s</DasType>
+      <Position>7</Position>
+    </column>
+    <column id="514" parent="504" name="C8">
+      <DasType>TEXT|0s</DasType>
+      <Position>8</Position>
+    </column>
+    <column id="515" parent="504" name="C9">
+      <DasType>TEXT|0s</DasType>
+      <Position>9</Position>
+    </column>
+    <column id="516" parent="504" name="C10">
+      <DasType>TEXT|0s</DasType>
+      <Position>10</Position>
+    </column>
+    <column id="517" parent="504" name="C11">
+      <DasType>TEXT|0s</DasType>
+      <Position>11</Position>
+    </column>
+    <column id="518" parent="504" name="C12">
+      <DasType>TEXT|0s</DasType>
+      <Position>12</Position>
+    </column>
+    <column id="519" parent="504" name="C13">
+      <DasType>TEXT|0s</DasType>
+      <Position>13</Position>
+    </column>
+    <column id="520" parent="504" name="C14">
+      <DasType>TEXT|0s</DasType>
+      <Position>14</Position>
+    </column>
+    <column id="521" parent="504" name="C15">
+      <DasType>TEXT|0s</DasType>
+      <Position>15</Position>
+    </column>
+    <column id="522" parent="504" name="C16">
+      <DasType>TEXT|0s</DasType>
+      <Position>16</Position>
+    </column>
+    <column id="523" parent="504" name="C17">
+      <DasType>TEXT|0s</DasType>
+      <Position>17</Position>
+    </column>
+    <column id="524" parent="504" name="C18">
+      <DasType>TEXT|0s</DasType>
+      <Position>18</Position>
+    </column>
+    <column id="525" parent="504" name="C19">
+      <DasType>TEXT|0s</DasType>
+      <Position>19</Position>
+    </column>
+    <column id="526" parent="504" name="C20">
+      <DasType>TEXT|0s</DasType>
+      <Position>20</Position>
+    </column>
+    <column id="527" parent="504" name="C21">
+      <DasType>TEXT|0s</DasType>
+      <Position>21</Position>
+    </column>
+    <column id="528" parent="504" name="C22">
+      <DasType>TEXT|0s</DasType>
+      <Position>22</Position>
+    </column>
+    <column id="529" parent="504" name="C23">
+      <DasType>TEXT|0s</DasType>
+      <Position>23</Position>
+    </column>
+    <column id="530" parent="504" name="C24">
+      <DasType>TEXT|0s</DasType>
+      <Position>24</Position>
+    </column>
+    <column id="531" parent="504" name="C25">
+      <DasType>TEXT|0s</DasType>
+      <Position>25</Position>
+    </column>
+    <column id="532" parent="504" name="C26">
+      <DasType>TEXT|0s</DasType>
+      <Position>26</Position>
+    </column>
+    <column id="533" parent="504" name="C27">
+      <DasType>TEXT|0s</DasType>
+      <Position>27</Position>
+    </column>
+    <column id="534" parent="504" name="C28">
+      <DasType>TEXT|0s</DasType>
+      <Position>28</Position>
+    </column>
+    <column id="535" parent="505" name="type">
+      <DasType>TEXT|0s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="536" parent="505" name="name">
+      <DasType>TEXT|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="537" parent="505" name="tbl_name">
+      <DasType>TEXT|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="538" parent="505" name="rootpage">
       <DasType>INT|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="510" parent="504" name="sql">
+    <column id="539" parent="505" name="sql">
       <DasType>TEXT|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="511" parent="505" name="User_ID">
+    <column id="540" parent="506" name="User_ID">
       <DasType>INTEGER|0s</DasType>
       <Position>1</Position>
     </column>
-    <column id="512" parent="505" name="username">
+    <column id="541" parent="506" name="username">
       <DasType>VARCHAR(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="513" parent="505" name="email">
+    <column id="542" parent="506" name="email">
       <DasType>VARCHAR(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="514" parent="505" name="password">
+    <column id="543" parent="506" name="password">
       <DasType>VARCHAR(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="515" parent="505" name="confirm">
+    <column id="544" parent="506" name="confirm">
       <DasType>VARCHAR(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="516" parent="505" name="Age">
+    <column id="545" parent="506" name="Age">
       <DasType>INT|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <Position>6</Position>
     </column>
-    <column id="517" parent="505" name="Location">
+    <column id="546" parent="506" name="Location">
       <DasType>VARCHAR(20)|0s</DasType>
       <DefaultExpression>&apos; &apos;</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>7</Position>
     </column>
-    <column id="518" parent="505" name="Past_Purchase">
+    <column id="547" parent="506" name="Past_Purchase">
       <DasType>INT|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <Position>8</Position>
     </column>
-    <key id="519" parent="505">
+    <key id="548" parent="506">
       <ColNames>User_ID</ColNames>
       <Primary>1</Primary>
     </key>

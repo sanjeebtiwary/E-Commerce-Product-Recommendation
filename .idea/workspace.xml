@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f057d4f5-3cca-444e-b7cb-9f0a26e14382" name="Changes" comment="" />
+    <list default="true" id="f057d4f5-3cca-444e-b7cb-9f0a26e14382" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4ff7cd88-ad0c-4852-9358-41e9ff05df83.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4ff7cd88-ad0c-4852-9358-41e9ff05df83.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/save.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/save.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/database.db" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,7 +71,8 @@
       "sqlite"
     ],
     "RunConfigurationTargetLRU": [
-      "2b68a101-9890-449d-aedd-12dec70ec04c/schema/\"main\""
+      "2b68a101-9890-449d-aedd-12dec70ec04c/schema/\"main\"",
+      "4ff7cd88-ad0c-4852-9358-41e9ff05df83"
     ]
   }
 }]]></component>
@@ -74,7 +80,7 @@
     <configuration name="console.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
       <script-file value="$APPLICATION_CONFIG_DIR$/consoles/db/2b68a101-9890-449d-aedd-12dec70ec04c/console.sql" />
       <script-mode>FILE</script-mode>
-      <data-source id="2b68a101-9890-449d-aedd-12dec70ec04c" namespace="schema/&quot;main&quot;" />
+      <data-source id="4ff7cd88-ad0c-4852-9358-41e9ff05df83" />
       <method v="2" />
     </configuration>
     <configuration name="E Commerce Product Recommendation" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
@@ -163,6 +169,7 @@
       <workItem from="1683105759995" duration="703000" />
       <workItem from="1683125227718" duration="1172000" />
       <workItem from="1683128013613" duration="7981000" />
+      <workItem from="1683150574753" duration="3286000" />
     </task>
     <servers />
   </component>
@@ -174,6 +181,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/save_py$E_Commerce_Product_Recommendation.coverage" NAME="E Commerce Product Recommendation Coverage Results" MODIFIED="1683105857649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
-    <SUITE FILE_PATH="coverage/save_py$.coverage" NAME=" Coverage Results" MODIFIED="1683136126589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model" />
+    <SUITE FILE_PATH="coverage/save_py$.coverage" NAME=" Coverage Results" MODIFIED="1683178842563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model" />
   </component>
 </project>
