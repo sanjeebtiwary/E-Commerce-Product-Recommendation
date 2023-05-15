@@ -1,8 +1,10 @@
 #from fixtures.mydb import MyDB
+from tkinter.tix import INTEGER
 
 import pytest
 import sqlite3
 
+from lxml.html.builder import TABLE
 
 @pytest.fixture(scope="module")
 def cur():
