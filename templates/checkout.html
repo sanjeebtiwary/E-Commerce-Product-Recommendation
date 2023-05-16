@@ -1,92 +1,156 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
-
-    {% if title %}
-        <title>Flask Blog - {{ title }}</title>
-    {% else %}
-        <title>Flask Blog</title>
-    {% endif %}
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+body {
+   font-family: Arial;
+   font-size: 17px;
+   padding: 8px;
+}
+* {
+   box-sizing: border-box;
+}
+.Fields {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 20px;
+   justify-content: space-around;
+}
+.Fields div {
+   margin-right: 10px;
+}
+label {
+   margin: 15px;
+}
+.formContainer {
+   margin: 10px;
+   background-color: #efffc9;
+   padding: 5px 20px 15px 20px;
+   border: 1px solid rgb(191, 246, 250);
+   border-radius: 3px;
+}
+input[type="text"] {
+   display: inline-block;
+   width: 100%;
+   margin-bottom: 20px;
+   padding: 12px;
+   border: 1px solid #ccc;
+   border-radius: 3px;
+}
+label {
+   margin-left: 20px;
+   display: block;
+}
+.icon-formContainer {
+   margin-bottom: 20px;
+   padding: 7px 0;
+   font-size: 24px;
+}
+.checkout {
+   background-color: #4caf50;
+   color: white;
+   padding: 12px;
+   margin: 10px 0;
+   border: none;
+   width: 100%;
+   border-radius: 3px;
+   cursor: pointer;
+   font-size: 17px;
+}
+.checkout:hover {
+   background-color: #45a049;
+}
+a {
+   color: black;
+}
+span.price {
+   float: right;
+   color: grey;
+}
+@media (max-width: 800px) {
+.Fields {
+   flex-direction: column-reverse;
+}
+}
+</style>
 </head>
-<body style="background-image: url('https://wallpaperbrowse.com/media/images/simple-color-background-wallpaper-1.jpg');">
-    <header class="site-header">
-      <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
-        <div class="container">
-          <a class="navbar-brand mr-4" href="/">Flask Blog</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarToggle">
-            <div class="navbar-nav mr-auto">
-              <a class="nav-item nav-link" href="/">Home</a>
-              
-            </div>
-            <!-- Navbar Right Side -->
-            
-          </div>
-        </div>
-      </nav>
-    </header>
-
-
-    
-<div class="container">
-  <h1 class="display-4">Thank You!</h1>
-  <p class="lead">Your order has been placed successfully!</p>
-  <hr class="my-4">
-  <p>We look forward to serving you better! Thanks for being a part of BooksHub family. Have a nice day.</p>
-  
+<body>
+<h1 style="text-align: center;">Checkout</h1>
+<div class="Fields">
+<div>
+<div class="formContainer">
+<form>
+<div class="Fields">
+<div>
+<h3>Billing Address</h3>
+<label for="fname">Full Name</label>
+<input type="text" id="fname" name="firstname" />
+<label for="email"> Email</label>
+<input type="text" id="email" name="email" />
+<label for="adr"> Address</label>
+<input type="text" id="adr" name="address" />
 </div>
-   
-<div class="container">
-   <div class="col-md-3">
-      <div class="col-md-2">
-      <div class="card" style="width: 15rem;">
-  <img class="card-img-top" src="{{names1[0][1]}}" alt="Card image cap">
-  <div class="card-body" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkvb1EIZg2pm-74DDFCJ-VCRkpydwl-GvFpyj0tEfY7ZVidkdvbA');">
-    <h5 class="card-title" >{{names1[0][0]}}</h5>
-    <p class="card-text"><b>Author-</b>{{names1[0][2]}}</p>
-    <p class="card-text"><b>Publication Year-</b>{{names1[0][3]}}</p>
-    <p class="card-text"><b>Publisher-</b>{{names1[0][4]}}</p>
-   
-  </div>
+<div>
+<h3>Payment</h3>
+<label for="cname">Name on Card</label>
+<input type="text" id="cname" name="cardname" />
+<label for="ccnum">Credit card number</label>
+<input type="text" id="ccnum" name="cardnumber" />
+<div class="Fields">
+<div>
+<label for="expyear">Exp Year</label>
+<input type="text" id="expyear" name="expyear" />
+</div>
+<div>
+<label for="cvv">CVV</label>
+<input type="text" id="cvv" name="cvv" />
 </div>
 </div>
- </div>
-</div>
-
-    <div class="container">
-      <h2>Please rate your product</h2>
-      <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Ratings Column
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="/">1</a>
-    <a class="dropdown-item" href="/">2</a>
-    <a class="dropdown-item" href="/">3</a>
-    <a class="dropdown-item" href="/">4</a>
-    <a class="dropdown-item" href="/">5</a>
-    
-    
-
-  </div>
 </div>
 </div>
-   
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<input
+type="submit"
+value="Continue to checkout"
+class="checkout"
+/>
+</form>
+</div>
+</div>
+<div>
+<div class="formContainer">
+<h4>
+Cart <span class="price" style="color:black"><b>5</b></span>
+</h4>
+<p>
+<a style="text-decoration: none;" href="#">Product 1&nbsp;&nbsp;</a>
+<span class="price"> Rs 150&nbsp;</span>
+</p>
+<p>
+<a style="text-decoration: none;" href="#">Product 2&nbsp;&nbsp;</a>
+<span class="price"> Rs 190&nbsp;</span>
+</p>
+<p>
+    <a style="text-decoration: none;" href="#">Product 3&nbsp;&nbsp;</a>
+    <span class="price"> Rs 160&nbsp;</span>
+    </p>
+    <p>
+        <a style="text-decoration: none;" href="#">Product 4&nbsp;&nbsp;</a>
+        <span class="price"> Rs 160&nbsp;</span>
+        </p>
+        <p>
+            <a style="text-decoration: none;" href="#">Product 5&nbsp;&nbsp;</a>
+            <span class="price"> Rs 160&nbsp;</span>
+            </p>
+            <p>
+                <a style="text-decoration: none;" href="#">Tax</a>
+                <span class="price">Rs 50</span>
+                </p>
+<p>
+Total <span class="price" style="color:black"><b>Rs 870</b></span>
+</p>
+</div>
+</div>
+</div>
 </body>
 </html>
